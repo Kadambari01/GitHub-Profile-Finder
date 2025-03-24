@@ -1,3 +1,5 @@
+#Live Demo https://kadambari01.github.io/GitHub-Profile-Finder/
+
 # GitHub Profile Finder  
 
 This is a simple web application that allows users to search for GitHub profiles by username and view details such as profile picture, bio, repositories, followers, and more.  
@@ -23,3 +25,4 @@ This is a simple web application that allows users to search for GitHub profiles
 1. Clone this repository:  
    ```sh
    git clone https://github.com/Kadambari01/GitHub-Profile-Finder.git
+
