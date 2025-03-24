@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Finder</h1>
+    <div class="search-box">
+      <input type="text" id="username" placeholder="Enter GitHub username..." />
+      <button id="searchBtn">Search</button>
+      <button id="dark-mode-toggle">🌙</button>
+    </div>
+    <div id="loading" class="loading-spinner"></div>
+    <div id="profile" class="profile-card"></div>
+
+    <!-- Trending Profiles Section -->
+    <div class="trending-profiles">
+      <h2>Trending Profiles</h2>
+      <div class="trending-list">
+        <div class="trending-item" onclick="searchProfile('torvalds')">Linus Torvalds</div>
+        <div class="trending-item" onclick="searchProfile('gaearon')">Dan Abramov</div>
+        <div class="trending-item" onclick="searchProfile('sindresorhus')">Sindre Sorhus</div>
+        <div class="trending-item" onclick="searchProfile('octocat')">Octocat</div>
+      </div>
+    </div>
+
+    <!-- Recent Searches Section -->
+    <div class="recent-searches">
+      <h2>Recent Searches</h2>
+      <div id="recent-list" class="recent-list"></div>
+    </div>
+
+    <!-- GitHub Statistics Section -->
+    <!-- Add this inside the container, below the Recent Searches section -->
+<div class="github-stats">
+    <h2>GitHub Statistics</h2>
+    <div id="stats">
+      <div class="stat-item">
+        <p id="total-repos">Loading...</p>
+        <span>Public Repositories</span>
+      </div>
+      <div class="stat-item">
+        <p id="total-users">Loading...</p>
+        <span>GitHub Users</span>
+      </div>
+      <div class="stat-item">
+        <p id="github-status">Loading...</p>
+        <span>GitHub Status</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤️ by <a href="https://github.com/Kadambari01" target="_blank">Kadambari</a></p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
