@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +14,12 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
-body.dark-mode {
+body.dark-mode{
     background: #121212;
     color: #fff;
 }
 
-.container {
+.container{
     text-align: center;
     max-width: 500px;
     width: 100%;
@@ -30,13 +30,13 @@ body.dark-mode {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1{
     color: #fff;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.search-box {
+.search-box{
     display: flex;
     margin-bottom: 20px;
     background-color: #fff;
@@ -45,7 +45,7 @@ h1 {
     padding: 5px;
 }
 
-.search-box input {
+.search-box input{
     flex: 1;
     padding: 12px 20px;
     font-size: 1rem;
@@ -55,11 +55,11 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.search-box input:focus {
+.search-box input:focus{
     background-color: #f0f2f5;
 }
 
-.search-box button {
+.search-box button{
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -72,16 +72,16 @@ h1 {
     margin-left: 10px;
 }
 
-.search-box button:hover {
+.search-box button:hover{
     background-color: #0056b3;
 }
 
-#dark-mode-toggle {
+#dark-mode-toggle{
     background-color: #333;
     color: #fff;
 }
 
-.loading-spinner {
+.loading-spinner{
     display: none;
     margin: 20px auto;
     border: 4px solid #f3f3f3;
@@ -92,12 +92,12 @@ h1 {
     animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
+@keyframes spin{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-.profile-card {
+.profile-card{
     display: none;
     background: #fff;
     padding: 20px;
@@ -109,37 +109,37 @@ h1 {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.dark-mode .profile-card {
+.dark-mode .profile-card{
     background: #333;
     color: #fff;
 }
 
-.profile-card img {
+.profile-card img{
     border-radius: 50%;
     margin-bottom: 15px;
     width: 100px;
 }
 
-.profile-card h2 {
+.profile-card h2{
     color: #333;
     font-weight: 600;
 }
 
-.dark-mode .profile-card h2 {
+.dark-mode .profile-card h2{
     color: #fff;
 }
 
-.profile-card p, .profile-card span {
+.profile-card p, .profile-card span{
     color: #666;
     font-size: 0.9rem;
     margin: 5px 0;
 }
 
-.dark-mode .profile-card p, .dark-mode .profile-card span {
+.dark-mode .profile-card p, .dark-mode .profile-card span{
     color: #ccc;
 }
 
-.profile-card a {
+.profile-card a{
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
@@ -147,27 +147,27 @@ h1 {
     font-weight: 600;
 }
 
-.profile-stats {
+.profile-stats{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
 
-.stat {
+.stat{
     text-align: center;
 }
 
-.stat p {
+.stat p{
     margin-top: 5px;
     color: #333;
     font-weight: bold;
 }
 
-.dark-mode .stat p {
+.dark-mode .stat p{
     color: #fff;
 }
 
-.error {
+.error{
     color: #ff4d4f;
     margin-top: 20px;
 }
@@ -178,20 +178,20 @@ h1 {
     text-align: center;
 }
 
-.trending-profiles h2 {
+.trending-profiles h2{
     color: #fff;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.trending-list {
+.trending-list{
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.trending-item {
+.trending-item{
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
     border-radius: 50px;
@@ -200,30 +200,30 @@ h1 {
     transition: background 0.3s ease;
 }
 
-.trending-item:hover {
+.trending-item:hover{
     background: rgba(255, 255, 255, 0.2);
 }
 
 /* Recent Searches Section */
-.recent-searches {
+.recent-searches{
     margin-top: 30px;
     text-align: center;
 }
 
-.recent-searches h2 {
+.recent-searches h2{
     color: #fff;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.recent-list {
+.recent-list{
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.recent-item {
+.recent-item{
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
     border-radius: 50px;
@@ -232,31 +232,30 @@ h1 {
     transition: background 0.3s ease;
 }
 
-.recent-item:hover {
+.recent-item:hover{
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Add these styles for the GitHub Statistics section */
-/* Add these styles for the GitHub Statistics section */
-.github-stats {
+/* GitHub Statistics Section */
+.github-stats{
     margin-top: 30px;
     text-align: center;
     color: #fff;
 }
 
-.github-stats h2 {
+.github-stats h2{
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-#stats {
+#stats{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.stat-item {
+.stat-item{
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
     border-radius: 10px;
@@ -264,34 +263,35 @@ h1 {
     min-width: 150px;
 }
 
-.stat-item p {
+.stat-item p{
     margin: 5px 0;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.stat-item span {
+.stat-item span{
     font-size: 0.9rem;
     color: #ccc;
 }
+
 /* Footer */
-footer {
+footer{
     margin-top: 40px;
     text-align: center;
     color: #fff;
 }
 
-footer a {
+footer a{
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
 }
 
-footer a:hover {
+footer a:hover{
     text-decoration: underline;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn{
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
